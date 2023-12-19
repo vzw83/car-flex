@@ -296,9 +296,6 @@ body{
     top: 3px;
 }
 
-
-
-
 .benefits__content{
     width: 300px;
     text-align: right;
@@ -408,3 +405,38 @@ body{
     margin-top: 35px;
 }
 
+.feedback{
+    padding: 100px 0;
+}
+
+.feedback__inner{
+    display: flex;
+    align-items: center;
+}
+
+.feedback__images{
+    width: 50%;
+}
+
+.feedback__form{
+    width: 415px;
+    margin: 0 auto;
+}
+.feedback__title{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 5px;
+}
+.feedback__text{
+margin-bottom: 40px;
+}
+
+feedback__input{
+inline
+}
+
+.feedback__btn{
+
+}
