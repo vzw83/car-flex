@@ -430,13 +430,51 @@ body{
     margin-bottom: 5px;
 }
 .feedback__text{
-margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
-feedback__input{
-inline
+.feedback__input{
+    display: block;
+    padding: 20px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #0000001A;
+    margin-bottom: 50px;
+}
+
+.feedback__input::placeholder{
+   font-size: 16px;
+   line-height: 19px; 
+   color: #000;
 }
 
 .feedback__btn{
+    padding: 16px 36px;
+    background-color: #C5AC2D;
+    border: none;
+    text-transform: uppercase;
+    color:#fefefe;
+    font-size: 16px;
+    line-height: 19px; 
+}
 
+.footer{
+    background: #332208 ;  
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 75px;
+}
+
+.socialnetwork{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.socialnetwork__link-images{
+    margin: 0 15px;
 }
