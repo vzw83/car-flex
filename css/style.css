@@ -503,6 +503,11 @@ body{
 @media (max-width: 1140px){
     .rent__inner{
         flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .rent__content{
+        width: 100%;
+        margin-bottom: 30px;
     }
 }
 
@@ -582,6 +587,23 @@ body{
     left: 0;
     top: 9px;
   }
+
+  .rent__item{
+    margin: 30px;
+  }
+}
+
+@media (max-width: 650px){
+    .rent__item{
+        width: 100%;
+        min-height: 245px;
+    }
+    .rent__item-title{
+        margin-bottom: 20px;
+    }
+    .rent__content{
+        text-align: center;
+    }
 }
 
 @media (max-width: 525px){
@@ -623,5 +645,8 @@ body{
     .top__slide-text span{
         display: block;
         margin: 10px 0;
+    }
+    .rent__item{
+        margin:3 0px 5px;
     }
 }
