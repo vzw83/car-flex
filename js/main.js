@@ -4,7 +4,14 @@ $(function(){
     autoplay: true,
     arrows: false,
     dots: true,
-    fade: true
+    fade: true,responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          dots: false
+        }
+      },
+   ]
    })
 
    $('.reviews__slider').slick({
