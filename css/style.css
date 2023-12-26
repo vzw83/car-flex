@@ -271,11 +271,16 @@ body{
 .benefits__item{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .benefits__list{
     width: 300px;
     list-style: none;
+}
+
+.benefits__img{
+    width: 100%;
 }
 
 .benefits__list-item{
@@ -500,6 +505,13 @@ body{
     display: none;
 }
 
+
+@media (max-width: 1250px){
+    .benefits__img{
+        width: 40%;
+    }
+}
+
 @media (max-width: 1140px){
     .rent__inner{
         flex-wrap: wrap;
@@ -536,10 +548,23 @@ body{
         padding-top: 50px;
         text-align: center;
     }
+    .benefits__content{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .benefits__item{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .benefits__text + .benefits__text{
+        width: 100%;
+    }
 }
 
 @media (max-width: 860px){
-
+    .footer .menu{
+        display: none;
+    }
     .menu{
     order: 1;
    }
@@ -591,6 +616,17 @@ body{
   .rent__item{
     margin: 30px;
   }
+
+  .feedback__images{
+    display: none;
+  }
+
+  .footer,
+  .feedback,
+  .reviews,
+  .rent{
+    padding: 50px 0;
+  }
 }
 
 @media (max-width: 650px){
@@ -604,6 +640,7 @@ body{
     .rent__content{
         text-align: center;
     }
+
 }
 
 @media (max-width: 525px){
@@ -615,6 +652,33 @@ body{
     }
     .top__slide-text{
         padding-right: 0;
+    }
+    .benefits__img{
+        width: 70%;
+    }
+    .benefits__list-item{
+        margin-right: 0;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 26px;
+    }
+    .benefits__list-item::after{
+        right: auto;
+        left: 0;
+    }
+    .benefits__list{
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px){
+    .footer__top{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .phone{
+        margin-top: 30px;
+        display: inline-block;
     }
 }
 
@@ -648,5 +712,8 @@ body{
     }
     .rent__item{
         margin:3 0px 5px;
+    }
+    .benefits__list-item:nth-child(4){
+        margin-right: 0;
     }
 }

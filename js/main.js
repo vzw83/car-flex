@@ -4,7 +4,8 @@ $(function(){
     autoplay: true,
     arrows: false,
     dots: true,
-    fade: true,responsive: [
+    fade: true,
+    responsive: [
       {
         breakpoint: 1200,
         settings: {
@@ -21,6 +22,26 @@ $(function(){
       autoplay: true,
       arrows: false,
       dots: true,
+      responsive: [
+         {
+           breakpoint: 1141,
+           settings: {
+            slidesToShow: 3,
+           }
+         },
+         {
+            breakpoint: 846,
+            settings: {
+             slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 586,
+            settings: {
+             slidesToShow: 1,
+            }
+          },
+      ]
    //  fade: true
    })
 
